@@ -1,16 +1,15 @@
 import java.util.*;
-class a
-{
-	public static void main(String arg[])
-	{
-		String s=new String();
-		Scanner sc=new Scanner(System.in);
-		s=sc.next();
-		System.out.println("the entered string is :"+s);
-		  	System.out.println(s.replaceAll("[AaEeIiOoUu]",""));
-		  	System.out.println(s.replaceAll("[0123456789]",""));
-		  	System.out.println(s.toLowerCase());
+class main{
+	public static void main(String[]args){
+		//string to lowercase
+		String s = new String();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the string: ");
+		s = sc.nextLine();
+		System.out.println("The string is: "+ s);
+		System.out.println("The lowercase string is: "+ s.toLowerCase());
 
-		  	
+		//replace space with underscore
+		System.out.println("The altered spaces is: "+ s.replace(" ", "_"));
 	}
 }
